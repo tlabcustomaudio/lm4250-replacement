@@ -113,7 +113,7 @@ LM_VS=9 python3 compare_all.py         # the comparison of section 4.1 (writes .
 python3 bench2.py                      # section 4.2
 LM_VS=18 python3 emu.py CLONE          # 18 V runs (also opt.py / emu.py)
 ```
-`data/` holds the result files used for the figures. `hardware/clone` holds the KiCad 10 schematic of the discrete clone (A3, drawn with real wires; labels only for the ISET / D1 / A rails and the DIP-8 pins; parts numbered +100) and its PDF; `hardware/opa333-module` the schematic of the OPA333 module and the stripboard layout script (check against the netlist). Stripboard guide: [`docs/VEROBOARD-OPA333-MODULE.md`](docs/VEROBOARD-OPA333-MODULE.md).
+`data/` holds the result files used for the figures. `hardware/clone` holds the KiCad 10 schematic of the discrete clone (A3, drawn with real wires; labels only for the ISET / D1 / A rails and the DIP-8 pins; parts numbered +100) and its PDF; `hardware/opa333-module` the schematic of the OPA333 module and the stripboard layout script (check against the netlist). Stripboard guides: [OPA333 module](docs/VEROBOARD-OPA333-MODULE.md) and [discrete clone](docs/VEROBOARD-CLONE.md) (generated and verified by `hardware/clone/veroboard_clone.py`; 25 strips × 16 holes, 20 jumpers).
 
 ## 7. Licences
 * Scripts: MIT ([LICENSE](LICENSE)). Text and figures: CC BY 4.0. Hardware files: CERN-OHL-S-2.0. See [LICENSING.md](LICENSING.md).

@@ -34,7 +34,7 @@ Parts: OPA333 on a SOIC-8→DIP-8 adapter (in a DIP-8 socket), **78L05** (TO-92)
 * Output swing is limited to ±2.5 V around 4.5 V. Stripboard version: [VEROBOARD-OPA333-MODULE.md](VEROBOARD-OPA333-MODULE.md).
 
 ## 6. Discrete clone (18 transistors)
-THT equivalents: **BC547B** (NPN) and **BC557B** (PNP) — check each maker's TO-92 pin order (ON: E-B-C; NXP: C-B-E) and verify with a multimeter. Select Q101/Q102 and Q103/Q104 as pairs (same hFE and Vbe within a few %) with a multimeter/transistor tester.
+THT equivalents: **BC547B** (NPN) and **BC557B** (PNP) — the pin order differs between makers (onsemi lists C-B-E, an older Philips datasheet E-B-C): check your datasheet and verify with a multimeter. Select Q101/Q102 and Q103/Q104 as pairs (same hFE and Vbe within a few %) with a multimeter/transistor tester.
 Clone parts are numbered **AN-71 number + 100** (Q101…Q118, R101…R117, C101) so they never clash with the pedal's own R7, C6… Resistors 1 % (E96), Cc (C101) **39 pF C0G** (the original 30 pF; tune 36–43 pF), R7 stays on the pedal PCB (1M5, pin 8 → GND).
 
 | Q | Type | C | B | E |
