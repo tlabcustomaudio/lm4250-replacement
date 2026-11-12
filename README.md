@@ -24,7 +24,7 @@ This project collects, simulates and ranks **every practical way to get close to
 * **Rset (to ground, single supply) = (V+ − 0.5 V) / Iset** (TI AN-71, eq. 3). The Stingray-style preamp uses 1M5 at 9 V → **Iset ≈ 5.7 µA** (11.7 µA at 18 V).
 * Values read from the datasheet graphs at 5.7 µA, 9 V (±15 %): **GBW ≈ 200 kHz** (AN-71 quotes 200 kHz at 6 µA), **slew ≈ 0.11 V/µs**, **phase margin ≈ 50°**, input bias ≈ 10–15 nA, supply current ≈ 8 × Iset ≈ 46 µA, output swing to within a few hundred mV of the rails, class-B output.
 * Input stage = lateral PNP pair with 10 kΩ degeneration → linear range ≈ 90 mV, hence a very low slew rate for its bandwidth (slew / 2π·GBW ≈ 88 mV).
-* The full internal schematic is in TI AN-71, fig. 1; our drawn replica is in [`hardware/`](hardware).
+* The full internal schematic is in TI AN-71, fig. 1; our drawn replica is in [`hardware/clone`](hardware/clone).
 
 ![Reference model vs Iset](figures/fig1_reference_curves.png)
 
@@ -38,7 +38,7 @@ Replacements must therefore reproduce **GBW, second pole and slew limiting** —
 | R1 | Real LM4250 (NOS) | – | ≈ 46 µA | scarce, counterfeits |
 | R2 | **Discrete clone** of AN-71 fig. 1 on a DIP-8 module (SOT-23 or THT transistors, Cc ≈ 39–40 pF) | 2.5 dB | 71 µA | follows the programming range; schematic done |
 | R3 | **OTA emulator**: LM13700 OTA (gm·tanh limit = slew) + inverting integrator | 1.5 dB | ≈ 5 mA | bench only; ≥ 9.5 V supply recommended by one datasheet |
-| R4 | **Low-voltage op-amp module** (OPA333): 5 V LDO with its GND pin on a 2.0 V divider node → rails 2.0–7.0 V centred on the 4.5 V bias | 2.7 dB | ≈ 28 µA (high-Z divider) | ±2.5 V headroom; the op-amp alone cannot run from 9 V (max 5.5 V, abs. max 7 V) |
+| R4 | **Low-voltage op-amp module** (OPA333): 5 V regulator (78L05, or HT7550-1) with its GND pin on a ~2 V divider node → rails ~2–7 V centred on the 4.5 V bias; schematic + stripboard layout | 2.7 dB | ≈ 9 mA with a 78L05 (its 4 mA ground current must be absorbed by a low-value divider); ≈ 140 µA with an HT7550-1 | ±2.5 V headroom; supply ≥ 8.8 V (78L05 dropout); the op-amp alone cannot run from 9 V (max 5.5 V, abs. max 7 V) |
 | R5 | LM308 + compensation capacitor between pins 1 and 8 (100–150 pF) | 2.4 / 1.4 dB | ≈ 300 µA | also obsolete |
 | R6 | TLC271 (programmable CMOS; pin 8 to pin 3 = medium bias) | 3.3 dB | ≈ 150 µA | max 16 V |
 | R7 | OP07, TL061, TL071 + C6 tweak (82–100 pF) | 3.3–3.7 dB | 0.2–3.5 mA | the drop-in fallbacks |
@@ -56,7 +56,7 @@ Same 15-point control grid, same large-signal bursts at RV1 max, metrics vs the 
 | 2 | LM308 + 100 pF (pins 1-8) | 2.38 | 0.33 | 4.27 | 0.93 | 12.7 | 3.00 | 300 |
 | 3 | Discrete clone (Cc 40 pF) | 2.47 | 0.24 | 2.69 | 1.19 | 4.3 | 3.00 | 71 |
 | 4 | LM308 + 150 pF (pins 1-8) | 1.43 | 0.18 | 1.50 | 2.34 | 12.6 | 3.50 | 300 |
-| 5 | OPA333 module (LDO window 2–7 V) | 2.71 | 0.37 | 4.95 | 1.22 | 18.8 | 4.75 | 28 |
+| 5 | OPA333 module (LDO window 2–7 V) | 2.71 | 0.37 | 4.95 | 1.22 | 18.8 | 4.75 | 140 (HT7550-1) / 9000 (78L05) |
 | 6 | OP07 | 3.26 | 0.50 | 7.29 | 1.52 | 23.5 | 6.25 | 3500 |
 | 7 | TLC271 medium (pin 8 = pin 3) | 3.34 | 0.45 | 5.71 | 1.88 | 28.7 | 6.75 | 150 |
 | 8 | TL061 + C6 100p | 3.56 | 0.55 | 6.83 | 1.94 | 22.6 | 7.25 | 200 |
@@ -100,6 +100,10 @@ The same ten netlists run in LTspice (batch, `sim/lt_compare.py`): small signal 
 
 ![Clone schematic](figures/fig0_clone_schematic.png)
 
+![OPA333 module schematic](figures/fig6_opa333_module_schematic.png)
+
+![Stripboard layout of the OPA333 module](figures/fig7_veroboard_opa333.png)
+
 ## 6. Reproduce
 Needs ngspice, Python 3 with numpy (matplotlib for plots); LTspice optional (see `sim/lt_compare.py` for the Mac batch setup).
 ```
@@ -109,7 +113,7 @@ LM_VS=9 python3 compare_all.py         # the comparison of section 4.1 (writes .
 python3 bench2.py                      # section 4.2
 LM_VS=18 python3 emu.py CLONE          # 18 V runs (also opt.py / emu.py)
 ```
-`data/` holds the result files used for the figures. `hardware/` holds the KiCad 10 schematic of the clone (A3, drawn with real wires; labels only for the ISET / D1 / A rails and the DIP-8 pins) and its PDF.
+`data/` holds the result files used for the figures. `hardware/clone` holds the KiCad 10 schematic of the discrete clone (A3, drawn with real wires; labels only for the ISET / D1 / A rails and the DIP-8 pins; parts numbered +100) and its PDF; `hardware/opa333-module` the schematic of the OPA333 module and the stripboard layout script (check against the netlist). Stripboard guide: [`docs/VEROBOARD-OPA333-MODULE.md`](docs/VEROBOARD-OPA333-MODULE.md).
 
 ## 7. Licences
 * Scripts: MIT ([LICENSE](LICENSE)). Text and figures: CC BY 4.0. Hardware files: CERN-OHL-S-2.0. See [LICENSING.md](LICENSING.md).

@@ -36,7 +36,7 @@ Parts: LM13700N, TL072 (two input buffers), TL071 (integrator), 2× 12k, 39k, 39
 * Tune Iabc for the bench: closed-loop gain ×10, −3 dB at ~20 kHz ↔ GBW 200 kHz.
 
 ## NOT to buy
-* OPA333, MCP6061, OPA391: supply 5.5–6 V maximum, they die at 9 V.
+* OPA333, MCP6061, OPA391 directly from 9 V: supply 5.5–6 V maximum, they die. Use the OPA333 module with the floating 5 V window ([VEROBOARD-OPA333-MODULE.md](VEROBOARD-OPA333-MODULE.md)).
 
 ## How to compare them
 Same settings and the same DI bass track through the test station for each variant: RV1 max frequency response (sweep), 10 kHz burst at RV1 max (slew distortion), and the real LM4250 if you ever find one. Order of tests: TL071 → LM308 → LM13700 → TLC271.

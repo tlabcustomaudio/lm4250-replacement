@@ -24,13 +24,14 @@ Chips: LM13700N (DIP-16), TL072, TL071. Parts: 2 × 12k, 39k, 390k, 2 × 100k, 1
 * TL071 integrator: pin 2 = s; 180 pF and 47M both from pin 6 to pin 2; pin 3 = REF; supply pins 7/4. TL071 pin 6 → 100 Ω → plug pin 6.
 * Checks: ≈ 20 µA into pin 1 (7.8 V across 390k); REF = 4.5 V; with the pedal's input shorted the output sits at REF.
 
-## 5. OPA333 module (LDO window; the op-amp never sees 9 V)
-Parts: OPA333 on a SOT-23-5/SOIC-8 → DIP breakout, LDO 5 V with a high input range (LP2950-5.0 TO-92, 30 V, or MCP1703A-5002), 78k, 22k, 10 µF, 1 µF, 100 nF.
-* Divider **78k from +9 V to node VM, 22k from VM to GND**, 10 µF VM→GND: VM ≈ 2.0 V.
-* LDO: **its GND pin on VM**, input = +9 V, output = **VREG**; 1 µF VREG→VM. VREG − VM must read 5.0 V.
-* **Check VREG − VM = 5.0 V with a multimeter before inserting the OPA333.**
-* OPA333: V+ = VREG, V− = VM, inputs/output to plug pins 3/2/6; 100 nF between VREG and VM. C6 stays 120 pF; remove R7.
-* Output swing is limited to ±2.5 V around 4.5 V; lower input levels than with the real chip.
+## 5. OPA333 module (the op-amp never sees 9 V)
+Parts: OPA333 on a SOIC-8→DIP-8 adapter (in a DIP-8 socket), **78L05** (TO-92), R1 1k3, R2 220 Ω, 47 µF (+ 330 nF, 1 µF, 100 nF).
+* VM node: R1 1k3 from +9 V to VM, R2 220 Ω from VM to GND, 47 µF + on VM / − on GND → **VM ≈ 2.0 V**. (The 78L05's ~4 mA ground current flows into this node: that is why R1/R2 are low.)
+* 78L05: **IN = +9 V, GND pin on VM, OUT = VREG**; 330 nF IN→VM, 100 nF and 1 µF VREG→VM. **VREG − VM must read 5.0 V**, and the supply must be ≥ ~8.8 V (78L05 dropout).
+* **Check VM and VREG − VM with a multimeter before inserting the OPA333.**
+* OPA333: V+ = VREG, V− = VM, inputs/output to plug pins 3/2/6 (+IN pin 3, −IN pin 2); pins 1/5/8 not connected. C6 stays 120 pF; remove R7.
+* Low-power alternative: HT7550-1 with R1 62k / R2 15k (pin order of the TO-92 varies by revision).
+* Output swing is limited to ±2.5 V around 4.5 V. Stripboard version: [VEROBOARD-OPA333-MODULE.md](VEROBOARD-OPA333-MODULE.md).
 
 ## 6. Discrete clone (18 transistors)
 THT equivalents: **BC547B** (NPN) and **BC557B** (PNP) — check each maker's TO-92 pin order (ON: E-B-C; NXP: C-B-E) and verify with a multimeter. Select Q101/Q102 and Q103/Q104 as pairs (same hFE and Vbe within a few %) with a multimeter/transistor tester.
