@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>Stingray-style preamp pedal V3 (netlist export)</source>
+    <date>2026-11-12T14:27:29</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Music Man Stomp</title>
+        <company>T Lab Custom Audio</company>
+        <rev>3</rev>
+        <date>2026-10-22</date>
+        <source>Stingray-style preamp pedal V3 (netlist export)</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>47u</value>
+      <footprint>Capacitor_TA:CP_Radial_D6.3_P2.5</footprint>
+      
+      <libsource lib="Stingray-rescue" part="CP1_Small-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7630b218-a2f3-4299-aea4-1f8123db6f55</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>Capacitor_TA:Wima_MKP2_7.2x5_P5</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>969cd693-bc26-4b64-a21b-85e0629d1cbe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>470p</value>
+      <footprint>Capacitor_TA:C_Disc_D3.8mm_W2.6mm_P2.50mm</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5d72aeb-f862-4a4a-bdb9-db578f64febe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>1n8</value>
+      <footprint>Capacitor_TA:Wima_MKP2_7.2x3_P5</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d68c3ad0-76fc-4746-b038-c02c71ca9336</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>1n8</value>
+      <footprint>Capacitor_TA:Wima_MKP2_7.2x3_P5</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>33fe1f79-4c8f-476b-90b9-bb9ef02f3619</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>120p</value>
+      <footprint>Capacitor_TA:C_Disc_D3.8mm_W2.6mm_P2.50mm</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6617c186-8f5e-437f-94f4-424f78edd815</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>47n</value>
+      <footprint>Capacitor_TA:Wima_MKP2_7.2x3_P5</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>18600e25-4d48-4605-aef5-022a7429267d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>500p</value>
+      <footprint>Capacitor_TA:C_Disc_D3.8mm_W2.6mm_P2.50mm</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c3fd555-e5fe-4d56-90ef-8170f8d1fa9d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>500p</value>
+      <footprint>Capacitor_TA:C_Disc_D3.8mm_W2.6mm_P2.50mm</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c306b289-55f9-4ebb-adef-aec26d518db2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>10uF</value>
+      <footprint>Capacitor_TA:CP_Radial_D6.3_P2.5</footprint>
+      
+      <libsource lib="Stingray-rescue" part="CP1_Small-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7b660a22-77f9-46ee-b75e-c7eeef33de9f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>1u</value>
+      <footprint>Capacitor_TA:Wima_MKP2_7.2x5_P5</footprint>
+      
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5cca27e-d34a-4631-8948-82fa362918ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>LED_Small</value>
+      <footprint>LED_THT:LED_D5.0mm_Clear</footprint>
+      
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000605c24ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x05</value>
+      <footprint>Connector_TA:PinSocket_1x05_P2.54mm_Vertical</footprint>
+      
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005eb28df3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="N1">
+      <value>Housing</value>
+      <footprint>Enclosure_TA:1590B</footprint>
+      
+      <libsource lib="Mechanical" part="Housing" description="Housing"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005fc1a52a</tstamps>
+      <units>
+        <unit name="A">
+          <pins/>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>2M2</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b621a19-eb9b-42fb-855d-d037179625ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>2M2</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>10020223-5822-4acc-9fa7-9723937bed33</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>2M2</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7915f11e-0ba0-417a-ba27-f0cb9ef2d754</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>220k</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58e7454e-6375-4264-963f-45a9cd841f4a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>4k7</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2aa444be-b426-43bf-9c03-dceda110d6f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>100k</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fb7e9ae3-6cef-4d75-a16c-3dca0fa6c5ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>1M5</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1c0c4321-1854-4dd3-825d-fbbf26b9e1d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d061d7e-8185-4084-aa4c-e679680344b7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f53af2a4-a8df-4aeb-b19f-fca8506a70d5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>51k</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>615fcf0b-e038-49cb-8308-eb16b10520fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>10k</value>
+      <footprint>Resistor_TA:Resistor_0.25W</footprint>
+      
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000605b8694</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RV1">
+      <value>1MC</value>
+      <footprint>Potentiometer_TA:Alpha_Taiwan_Mono_16mm_RV16AF-41</footprint>
+      
+      <libsource lib="Stingray-rescue" part="R_POT-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>12a8401c-14c4-4f92-bb0c-ec620f337ff4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RV2">
+      <value>100kA</value>
+      <footprint>Potentiometer_TA:Alpha_Taiwan_Mono_16mm_RV16AF-41</footprint>
+      
+      <libsource lib="Stingray-rescue" part="R_POT-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdbe60fa-bd17-4c3e-8653-3628b96a4470</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RV3">
+      <value>25kA</value>
+      <footprint>Potentiometer_TA:Alpha_Taiwan_Mono_16mm_RV16AF-41</footprint>
+      
+      <libsource lib="Stingray-rescue" part="R_POT-Device" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e5b8411-39f4-4dde-ad15-342d7512150f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="S1">
+      <value>SWITCH-3PDT-PTH-STOMP</value>
+      <footprint>Switch_TA:Toggle_Switch_Miyama_MS500_3PDT</footprint>
+      
+      <libsource lib="SparkFun-Switches" part="SWITCH-3PDT-PTH-STOMP" description="3-Pole, Double-Throw (3PDT) Switch Three-pole, double-throw stomp switch. Drawn as three separate gates for schematic clarity. &lt;h4&gt;SparkFun Products&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Used in &lt;a href=&quot;https://www.sparkfun.com/products/13124&quot;&gt;SparkFun Proto Pedal&lt;/a&gt; (PRT-13124)&lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9cf6a0da-33a2-4360-b0b1-36b34230771d ac3186bd-7ab8-477a-b41d-dacf11178999 3d0544a6-493a-45a9-8381-b359886b4eca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+        <unit name="B">
+          <pins>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+        <unit name="C">
+          <pins>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_DPDT_x2</value>
+      <footprint>Switch_TA:Toggle_Switch_Miyama_MS-500</footprint>
+      
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f9bbf78-d76e-4444-9838-4f2cd6ce7897</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+        <unit name="B">
+          <pins>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>LM4250</value>
+      <footprint>IC_TA:DIP-8_W7.62mm_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm4250.pdf</datasheet>
+      
+      <libsource lib="Amplifier_Operational" part="LM4250" description="Programmable Operational Amplifier, DIP-8/SOIC-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44bcdf30-e62e-4554-a8a3-cb1ed1608081</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="7"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="8"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="LM4250">
+      <description>Programmable Operational Amplifier, DIP-8/SOIC-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm4250.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>TO?5*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="NULL" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="NULL" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="V+" type="power_in"/>
+        <pin num="8" name="IQ" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Small">
+      <description>Light emitting diode, small symbol</description>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="Housing">
+      <description>Housing</description>
+      <footprints>
+        <fp>Enclosure*</fp>
+        <fp>Housing*</fp>
+      </footprints>
+      
+    </libpart>
+    <libpart lib="SparkFun-Switches" part="SWITCH-3PDT-PTH-STOMP">
+      <description>3-Pole, Double-Throw (3PDT) Switch Three-pole, double-throw stomp switch. Drawn as three separate gates for schematic clarity. &lt;h4&gt;SparkFun Products&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Used in &lt;a href="https://www.sparkfun.com/products/13124"&gt;SparkFun Proto Pedal&lt;/a&gt; (PRT-13124)&lt;/li&gt;&lt;/ul&gt;</description>
+      <footprints>
+        <fp>*STOMP_SWITCH_3PDT*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Stingray-rescue" part="CP1_Small-Device">
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Stingray-rescue" part="R_POT-Device">
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DPDT_x2">
+      <description>Switch, dual pole double throw, separate symbols</description>
+      <footprints>
+        <fp>SW*DPDT*</fp>
+      </footprints>
+      
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>${KICAD10_SYMBOL_DIR}/Amplifier_Operational.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>${KICAD10_SYMBOL_DIR}/Switch.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+VDC" class="Default">
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="V+_7" pintype="power_in"/>
+    </net>
+    <net code="2" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="RV3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="V-_4" pintype="power_in"/>
+    </net>
+    <net code="3" name="IN" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="Net-(C2-Pad2)" class="Default">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="Net-(C3-Pad2)" class="Default">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="S1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="6" name="Net-(C4-Pad2)" class="Default">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="3" pinfunction="3_3" pintype="passive"/>
+      <node ref="S1" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(C7-Pad2)" class="Default">
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="RV2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="S1" pin="9" pinfunction="9_9" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(C8-Pad2)" class="Default">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="S1" pin="5" pinfunction="5_5" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(C9-Pad2)" class="Default">
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="S1" pin="4" pinfunction="4_4" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(C10-Pad1)" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(C11-Pad1)" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="RV2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="6" pintype="output"/>
+    </net>
+    <net code="12" name="Net-(C11-Pad2)" class="Default">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="RV3" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(D2-A)" class="Default">
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="Net-(R5-Pad2)" class="Default">
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="S1" pin="8" pinfunction="8_8" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(SW1A-B)" class="Default">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="B_2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(SW1A-C)" class="Default">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="3" pinfunction="C_3" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(U1--)" class="Default">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="RV1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="-_2" pintype="input"/>
+    </net>
+    <net code="18" name="Net-(U1-IQ)" class="Default">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="IQ_8" pintype="input"/>
+    </net>
+    <net code="19" name="OUT" class="Default">
+      <node ref="J3" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="RV3" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="20" name="V" class="Default">
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+    </net>
+    <net code="21" name="Vdc" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="+_3" pintype="input"/>
+    </net>
+    <net code="22" name="unconnected-(RV2-Pad3)" class="Default">
+      <node ref="RV2" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="23" name="unconnected-(S1-Pad3)" class="Default">
+      <node ref="S1" pin="3" pinfunction="3_3" pintype="passive"/>
+    </net>
+    <net code="24" name="unconnected-(S1-Pad6)" class="Default">
+      <node ref="S1" pin="6" pinfunction="6_6" pintype="passive"/>
+    </net>
+    <net code="25" name="unconnected-(S1-Pad7)" class="Default">
+      <node ref="S1" pin="7" pinfunction="7_7" pintype="passive"/>
+    </net>
+    <net code="26" name="unconnected-(SW1A-A-Pad1)" class="Default">
+      <node ref="SW1" pin="1" pinfunction="A_1" pintype="passive"/>
+    </net>
+    <net code="27" name="unconnected-(U1-NULL-Pad1)" class="Default">
+      <node ref="U1" pin="1" pinfunction="NULL_1" pintype="input"/>
+    </net>
+    <net code="28" name="unconnected-(U1-NULL-Pad5)" class="Default">
+      <node ref="U1" pin="5" pinfunction="NULL_5" pintype="input"/>
+    </net>
+  </nets>
+</export>
